@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
+## [0.0.2] - 2020-03-24
+
+### Added
+
 - Added support for containerization with _Docker_
 
 ### Changed
@@ -28,5 +32,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Updated [`README.md`](/README.md)
 - Updated `package.json`
 
-[unreleased]: https://github.com/MedaiP90/chat-backend/compare/v0.0.1...HEAD
-[0.0.1]: https://github.com/MedaiP90/chat-backend/releases/tag/v0.0.1
+[unreleased]: https://github.com/MedaiP90/chat-backend/compare/0.0.2...HEAD
+[0.0.2]: https://github.com/MedaiP90/chat-backend/compare/0.0.1...0.0.2
+[0.0.1]: https://github.com/MedaiP90/chat-backend/releases/tag/0.0.1
