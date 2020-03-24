@@ -15,6 +15,15 @@ export class MessageService {
     private readonly l: Logger = pino();
 
     /**
+     * Find a message by its ID.
+     * @param messageId Message di find.
+     */
+    public async findOne(messageId: number): Promise<MessageEntity> {
+        this.l.info(`Message service - Find a message with id: ${messageId}`);
+        return await MessageEntity.findOne(messageId);
+    }
+
+    /**
      * Create a new message.
      * @param messageDetails New message.
      */
