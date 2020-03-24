@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  main:
+    container_name: chat-backend
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - ${SERVER_PORT}:${SERVER_PORT}
+    command: npm run start:prod
+    env_file:
+      - .env
+    networks:
+      - webnet
+
+networks:
+  webnet:
