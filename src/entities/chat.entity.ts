@@ -20,6 +20,9 @@ export class ChatEntity extends BaseEntity {
     @Column({ length: 500, nullable: true })
     description: string;
 
+    @Column()
+    createdDateTime: number;
+
     // 1:n one chat many messages
     @OneToMany(
         type => MessageEntity,

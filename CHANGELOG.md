@@ -16,6 +16,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Added `Chat`, `Message` and `User` typeorm entities
 - Added `Chat`, `Message` and `User` dtos
 - Added `Chat`, `Message` and `User` modules
+- Added timestamp info
+
+### Changed
+
+- Updated dependencies
 
 ## [0.0.2] - 2020-03-24
 

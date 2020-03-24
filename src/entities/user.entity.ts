@@ -17,7 +17,10 @@ export class UserEntity extends BaseEntity {
     nickName: string;
 
     @Column({ length: 20, nullable: true })
-    phoneNumber: string
+    phoneNumber: string;
+
+    @Column()
+    createdDateTime: number;
 
     // 1:n one user many messages
     @OneToMany(

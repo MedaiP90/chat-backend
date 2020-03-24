@@ -14,6 +14,9 @@ export class MessageEntity extends BaseEntity {
     @Column()
     content: string;
 
+    @Column()
+    sentDateTime: number;
+
     // n:1 many messages for one user
     @ManyToOne(
         type => UserEntity,
