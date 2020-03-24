@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Added `Chat`, `Message` and `User` dtos
 - Added `Chat`, `Message` and `User` modules
 - Added timestamp info
+- Added services to manage typeorm data
 
 ### Changed
 

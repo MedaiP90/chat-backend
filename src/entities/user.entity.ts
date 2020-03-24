@@ -1,4 +1,7 @@
-import { Entity, PrimaryGeneratedColumn, Column, BaseEntity, OneToMany } from 'typeorm';
+import {
+    Entity, PrimaryGeneratedColumn, Column,
+    BaseEntity, OneToMany, ManyToMany, JoinTable
+} from 'typeorm';
 import { MessageEntity } from './message.entity';
 
 @Entity()
@@ -22,10 +25,18 @@ export class UserEntity extends BaseEntity {
     @Column()
     createdDateTime: number;
 
+    @Column({ length: 20 })
+    password: string;
+
     // 1:n one user many messages
     @OneToMany(
         type => MessageEntity,
         message => message.chat,
     )
     messages: MessageEntity[];
+
+    // n:n many users can have many friends
+    @ManyToMany(type => UserEntity)
+    @JoinTable()
+    friends: UserEntity[];
 }
