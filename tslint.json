@@ -1,0 +1,20 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": { "no-unused-expression": true },
+    "rules": {
+        "eofline": false,
+        "quotemark": [ true, "single" ],
+        "max-line-length": [ true, 150 ],
+        "curly": false,
+        "interface-name": false,
+        "newline-per-chained-call": false,
+        "variable-name": false,
+        "no-inferrable-types": false,
+        "completed-docs": false,
+        "prefer-function-over-method": false
+    },
+    "rulesDirectory": []
+}
