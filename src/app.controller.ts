@@ -7,6 +7,10 @@ const packageJson: {description: string; name: string; version: string } = requi
 export class AppController {
     @Get()
     public appInfo(): {description: string; name: string; version: string } {
-        return packageJson;
+        return {
+            description: packageJson.description,
+            name: packageJson.name,
+            version: packageJson.version,
+        };
     }
 }

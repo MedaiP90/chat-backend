@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [unreleased]
 
+### Added
+
+- Added support for containerization with _Docker_
+
+### Changed
+
+- Better information given by `AppController`
+
 ## [0.0.1] - 2020-03-24
 
 ### Added
