@@ -1,8 +1,8 @@
 {
   "name": "chat-backend",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Nestjs backend for a chat application",
+  "author": "MedaiP90",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {

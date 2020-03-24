@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - Initialized the project
 - Added an app controller for retrieving project infos
+- Added [_MIT license_](/LICENSE)
 
 ### Changed
 
