@@ -26,3 +26,13 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+
+## Running with Docker
+
+```bash
+# Build and run the container
+$ docker-compose up -d
+
+# Rebuild the container
+$ docker-compose up -d --build
+```
