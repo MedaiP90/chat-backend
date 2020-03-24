@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
+- Added packages:
+  - `@nestjs/typeorm`
+  - typeorm
+  - sqlite3
+- Added `Chat`, `Message` and `User` typeorm entities
+- Added `Chat`, `Message` and `User` dtos
+- Added `Chat`, `Message` and `User` modules
+
 ## [0.0.2] - 2020-03-24
 
 ### Added
