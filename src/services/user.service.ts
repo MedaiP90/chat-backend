@@ -58,6 +58,17 @@ export class UserService {
     }
 
     /**
+     * Find an existing user by its nickname.
+     * @param nickName Nickname of the user.
+     */
+    public async findOneByNickname(nickName: string): Promise<UserEntity | undefined> {
+        this.l.info(`User service - Find a user with nick: ${nickName}`);
+        const users: UserEntity[] = await this.findAll();
+
+        return users.find((user: UserEntity) => user.nickName === nickName);
+    }
+
+    /**
      * Get all messages of a chat.
      * @param userId The chat that contains messages.
      */
